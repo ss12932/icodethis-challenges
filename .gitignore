@@ -70,4 +70,5 @@ yarn.lock
 .vscode
 *.xslx
 
+# dist folder 
 dist/
