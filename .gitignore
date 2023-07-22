@@ -52,6 +52,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+
 # Yarn Integrity file
 .yarn-integrity
 
@@ -68,3 +69,5 @@ yarn.lock
 .DS_Store
 .vscode
 *.xslx
+
+dist/
