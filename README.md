@@ -1,6 +1,6 @@
 # icodethis-challenges
 
-My daily dose of icodethis challenges which involves recreating various small UI components each day, in order to sharpen my tailwindcss skills.
+My daily dose of icodethis challenges which involves recreating various small UI components each day, in order to sharpen and hasten my tailwindcss skills. 
 
 ## Overview
 
@@ -37,11 +37,15 @@ In your terminal (MAC):
 
 ## Technologies
 
-None
+HTML, CSS and Javascript
 
 ## Package
 
 None
+
+## Resources
+
+Material Symbols and Icons from Google
 
 ## Dependencies
 
