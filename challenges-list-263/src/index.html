@@ -1,15 +1,276 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-  <!-- fallback CDN for submitting soln to icodethis.com -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline bg-red-500">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <!-- fallback CDN for submitting soln to icodethis.com -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body
+    class="bg-gray-200 min-h-screen flex justify-center items-center rounded-md"
+  >
+    <div
+      class="w-[45rem] bg-gray-100 flex justify-center items-center p-3 rounded-md"
+    >
+      <div class="w-[45rem] bg-gray-50 drop-shadow-md p-4">
+        <h1 class="p-4 text-3xl font-light">Active Challenges</h1>
+        <div class="flex py-4 px-8 space-x-4 items-center justify-between">
+          <div class="flex space-x-6">
+            <svg
+              class="h-16 w-16 bg-gray-300 rounded-full object-"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="256s"
+                  y1="539.96"
+                  x2="256"
+                  y2="-26.62"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#231f20" />
+                  <stop offset="1" stop-color="#58595b" />
+                </linearGradient>
+              </defs>
+              <title>music_note</title>
+              <path
+                d="M366.24,268.55A120.65,120.65,0,0,1,416,279.24V153.55c0-42.75,3.63-41.2-34.29-35.07-54.89,8.89-101.25,25.08-143.86,9.67-34.4-12.49-29-25.36-29,24.38V336.85h-.14c.11,1.69.14,3.35.14,5.08a92.3,92.3,0,1,1-92.29-92.53,91.43,91.43,0,0,1,25.75,3.67V79.89l-.07,0V41C141-24.36,166.18,4,200.57,20.55,286,61.65,348.91,25.53,429,19c59.86-4.87,58.7-4.9,58.7,59.55V389.91h0l0,.39C488.58,457.5,433.26,512,366.24,512s-121.5-54.5-121.5-121.71a121.63,121.63,0,0,1,121.5-121.74Z"
+                fill-rule="evenodd"
+                fill="url(#linear-gradient)"
+              />
+            </svg>
+            <div class="flex flex-col space-y-2">
+              <h2 class="font-semibold">Music Player Challenge</h2>
+              <div class="flex space-x-8">
+                <div class="flex flex-col">
+                  <span class="font-medium">83</span>
+                  <span class="text-xs">Challengers</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">16 Aug 2018</span>
+                  <span class="text-xs">Submission Date</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="py-2 px-4 bg-indigo-600 text-white text-xs rounded-md uppercase cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="flex py-4 px-8 space-x-4 items-center justify-between">
+          <div class="flex space-x-6">
+            <svg
+              class="h-16 w-16 bg-gray-300 rounded-full object-"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="256s"
+                  y1="539.96"
+                  x2="256"
+                  y2="-26.62"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#231f20" />
+                  <stop offset="1" stop-color="#58595b" />
+                </linearGradient>
+              </defs>
+              <title>music_note</title>
+              <path
+                d="M366.24,268.55A120.65,120.65,0,0,1,416,279.24V153.55c0-42.75,3.63-41.2-34.29-35.07-54.89,8.89-101.25,25.08-143.86,9.67-34.4-12.49-29-25.36-29,24.38V336.85h-.14c.11,1.69.14,3.35.14,5.08a92.3,92.3,0,1,1-92.29-92.53,91.43,91.43,0,0,1,25.75,3.67V79.89l-.07,0V41C141-24.36,166.18,4,200.57,20.55,286,61.65,348.91,25.53,429,19c59.86-4.87,58.7-4.9,58.7,59.55V389.91h0l0,.39C488.58,457.5,433.26,512,366.24,512s-121.5-54.5-121.5-121.71a121.63,121.63,0,0,1,121.5-121.74Z"
+                fill-rule="evenodd"
+                fill="url(#linear-gradient)"
+              />
+            </svg>
+            <div class="flex flex-col space-y-2">
+              <h2 class="font-semibold">Music Player Challenge</h2>
+              <div class="flex space-x-8">
+                <div class="flex flex-col">
+                  <span class="font-medium">83</span>
+                  <span class="text-xs">Challengers</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">16 Aug 2018</span>
+                  <span class="text-xs">Submission Date</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="py-2 px-4 bg-indigo-600 text-white text-xs rounded-md uppercase cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="flex py-4 px-8 space-x-4 items-center justify-between">
+          <div class="flex space-x-6">
+            <svg
+              class="h-16 w-16 bg-gray-300 rounded-full object-contain"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="256s"
+                  y1="539.96"
+                  x2="256"
+                  y2="-26.62"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#231f20" />
+                  <stop offset="1" stop-color="#58595b" />
+                </linearGradient>
+              </defs>
+              <title>music_note</title>
+              <path
+                d="M366.24,268.55A120.65,120.65,0,0,1,416,279.24V153.55c0-42.75,3.63-41.2-34.29-35.07-54.89,8.89-101.25,25.08-143.86,9.67-34.4-12.49-29-25.36-29,24.38V336.85h-.14c.11,1.69.14,3.35.14,5.08a92.3,92.3,0,1,1-92.29-92.53,91.43,91.43,0,0,1,25.75,3.67V79.89l-.07,0V41C141-24.36,166.18,4,200.57,20.55,286,61.65,348.91,25.53,429,19c59.86-4.87,58.7-4.9,58.7,59.55V389.91h0l0,.39C488.58,457.5,433.26,512,366.24,512s-121.5-54.5-121.5-121.71a121.63,121.63,0,0,1,121.5-121.74Z"
+                fill-rule="evenodd"
+                fill="url(#linear-gradient)"
+              />
+            </svg>
+            <div class="flex flex-col space-y-2">
+              <h2 class="font-semibold">Music Player Challenge</h2>
+              <div class="flex space-x-8">
+                <div class="flex flex-col">
+                  <span class="font-medium">83</span>
+                  <span class="text-xs">Challengers</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">16 Aug 2018</span>
+                  <span class="text-xs">Submission Date</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="py-2 px-4 bg-indigo-600 text-white text-xs rounded-md uppercase cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="flex py-4 px-8 space-x-4 items-center justify-between">
+          <div class="flex space-x-6">
+            <svg
+              class="h-16 w-16 bg-gray-300 rounded-full object-"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="256s"
+                  y1="539.96"
+                  x2="256"
+                  y2="-26.62"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#231f20" />
+                  <stop offset="1" stop-color="#58595b" />
+                </linearGradient>
+              </defs>
+              <title>music_note</title>
+              <path
+                d="M366.24,268.55A120.65,120.65,0,0,1,416,279.24V153.55c0-42.75,3.63-41.2-34.29-35.07-54.89,8.89-101.25,25.08-143.86,9.67-34.4-12.49-29-25.36-29,24.38V336.85h-.14c.11,1.69.14,3.35.14,5.08a92.3,92.3,0,1,1-92.29-92.53,91.43,91.43,0,0,1,25.75,3.67V79.89l-.07,0V41C141-24.36,166.18,4,200.57,20.55,286,61.65,348.91,25.53,429,19c59.86-4.87,58.7-4.9,58.7,59.55V389.91h0l0,.39C488.58,457.5,433.26,512,366.24,512s-121.5-54.5-121.5-121.71a121.63,121.63,0,0,1,121.5-121.74Z"
+                fill-rule="evenodd"
+                fill="url(#linear-gradient)"
+              />
+            </svg>
+            <div class="flex flex-col space-y-2">
+              <h2 class="font-semibold">Music Player Challenge</h2>
+              <div class="flex space-x-8">
+                <div class="flex flex-col">
+                  <span class="font-medium">83</span>
+                  <span class="text-xs">Challengers</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">16 Aug 2018</span>
+                  <span class="text-xs">Submission Date</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="py-2 px-4 bg-indigo-600 text-white text-xs rounded-md uppercase cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+        <div
+          class="flex py-4 px-8 mb-12 space-x-4 items-center justify-between"
+        >
+          <div class="flex space-x-6">
+            <svg
+              class="h-16 w-16 bg-gray-300 rounded-full object-"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="256s"
+                  y1="539.96"
+                  x2="256"
+                  y2="-26.62"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#231f20" />
+                  <stop offset="1" stop-color="#58595b" />
+                </linearGradient>
+              </defs>
+              <title>music_note</title>
+              <path
+                d="M366.24,268.55A120.65,120.65,0,0,1,416,279.24V153.55c0-42.75,3.63-41.2-34.29-35.07-54.89,8.89-101.25,25.08-143.86,9.67-34.4-12.49-29-25.36-29,24.38V336.85h-.14c.11,1.69.14,3.35.14,5.08a92.3,92.3,0,1,1-92.29-92.53,91.43,91.43,0,0,1,25.75,3.67V79.89l-.07,0V41C141-24.36,166.18,4,200.57,20.55,286,61.65,348.91,25.53,429,19c59.86-4.87,58.7-4.9,58.7,59.55V389.91h0l0,.39C488.58,457.5,433.26,512,366.24,512s-121.5-54.5-121.5-121.71a121.63,121.63,0,0,1,121.5-121.74Z"
+                fill-rule="evenodd"
+                fill="url(#linear-gradient)"
+              />
+            </svg>
+            <div class="flex flex-col space-y-2">
+              <h2 class="font-semibold">Music Player Challenge</h2>
+              <div class="flex space-x-8">
+                <div class="flex flex-col">
+                  <span class="font-medium">83</span>
+                  <span class="text-xs">Challengers</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">16 Aug 2018</span>
+                  <span class="text-xs">Submission Date</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="py-2 px-4 bg-indigo-600 text-white text-xs rounded-md uppercase cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+<!-- attributions -->
+<!-- <a href='https://dryicons.com/free-icons/music-icons'> Icon by Dryicons </a> -->
+<!-- <a href='https://dryicons.com/free-icons/world-cup'> Icon by Dryicons </a> -->
