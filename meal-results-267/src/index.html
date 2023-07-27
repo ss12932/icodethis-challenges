@@ -8,18 +8,22 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
-    <main>
-      <h1>Results for "Avocado"</h1>
-      <p>3 results found</p>
-      <div>
-        <p>Choose display</p>
+    <main class="meal-results">
+      <h1 class="meal-results__title">Results for "Avocado"</h1>
+      <p class="meal-results__count">3 results found</p>
+      <div class="display-buttons">
+        <p class="display-buttons__title">Choose display</p>
         <div>
-          <button></button>
-          <button></button>
+          <button
+            class="display-buttons__btn display-buttons__button--stacked"
+          ></button>
+          <button
+            class="display-buttons__btn display-buttons__button--grid"
+          ></button>
         </div>
       </div>
       <form class="dietary-filters">
-        <fieldset>
+        <fieldset class="dietary-filters__checkbox-group">
           <legend>Dietary Filters</legend>
           <input
             type="checkbox"
@@ -44,18 +48,36 @@
           <label for="dinner">Dinner</label>
         </fieldset>
       </form>
-      <section>
-        <div>
-          <img src="" alt="" />
-          <h2>Avocado sandwitch with boiled egg</h2>
-          <div>
+      <section class="menu-section">
+        <div class="menu-section__card-item">
+          <img class="menu-section__image" src="" alt="" />
+          <h2 class="menu-section__title">Avocado sandwich with boiled egg</h2>
+          <div class="menu-section__time-group">
             <!-- time icon -->
-            <p>under 1 hour</p>
+            <p class="menu-section__time">under 1 hour</p>
           </div>
           <!-- bookmark icon -->
         </div>
-        <div></div>
-        <div></div>
+        <div class="menu-section__card-item">
+          <img class="menu-section__image" src="" alt="" />
+          <h2 class="menu-section__title">Fresh Avocado salad with broccoli</h2>
+          <div class="menu-section__time-group">
+            <!-- time icon -->
+            <p class="menu-section__time">under 1 hour</p>
+          </div>
+          <!-- bookmark icon -->
+        </div>
+        <div class="menu-section__card-item">
+          <img class="menu-section__image" src="" alt="" />
+          <h2 class="menu-section__title">
+            Avocado and spinach pesto spaghetti
+          </h2>
+          <div class="menu-section__time-group">
+            <!-- time icon -->
+            <p class="menu-section__time">under 1 hour</p>
+          </div>
+          <!-- bookmark icon -->
+        </div>
       </section>
     </main>
   </body>
