@@ -4,81 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <!-- fallback CDN for submitting soln to icodethis.com -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body>
-    <main class="meal-results">
-      <h1 class="meal-results__title">Results for "Avocado"</h1>
-      <p class="meal-results__count">3 results found</p>
-      <div class="display-buttons">
-        <p class="display-buttons__title">Choose display</p>
-        <div>
+  <body class="min-h-screen flex justify-center items-center">
+    <main class="max-w-5xl w-full rounded-md shadow-lg p-16">
+      <header class="w-full flex justify-between mb-4">
+        <hgroup>
+          <h1 class="font-bold text-2xl">Results for "Avocado"</h1>
+          <p class="text-sm text-gray-500">3 results found</p>
+        </hgroup>
+        <div class="flex space-x-4 items-center justify-center">
+          <p class="text-xs">Choose display</p>
+          <div>
+            <button class="material-symbols-outlined">clear_all</button>
+            <button class="material-symbols-outlined">apps</button>
+          </div>
+        </div>
+      </header>
+      <section class="relative">
+        <!-- filter btn + filter badges-->
+        <div class="w-full flex space-x-2">
+          <button class="border bg-white px-2 py-2 flex items-center space-x-2">
+            <span class="material-symbols-outlined">filter_list</span>
+            <span class="text-sm">Filters</span>
+            <span class="px-2 py-1 text-white bg-blue-500 rounded-full text-xs"
+              >3</span
+            >
+          </button>
           <button
-            class="display-buttons__btn display-buttons__button--stacked"
-          ></button>
+            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2"
+          >
+            <span class="text-sm text-white">Vegetarian</span>
+            <span
+              class="material-symbols-outlined text-white rounded-full text-xs"
+            >
+              cancel</span
+            >
+          </button>
           <button
-            class="display-buttons__btn display-buttons__button--grid"
-          ></button>
+            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2"
+          >
+            <span class="text-sm text-white">Protein</span>
+            <span
+              class="material-symbols-outlined text-white rounded-full text-xs"
+            >
+              cancel</span
+            >
+          </button>
+          <button
+            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2"
+          >
+            <span class="text-sm text-white">Dinner</span>
+            <span
+              class="material-symbols-outlined text-white rounded-full text-xs"
+            >
+              cancel</span
+            >
+          </button>
         </div>
-      </div>
-      <form class="dietary-filters">
-        <fieldset class="dietary-filters__checkbox-group">
-          <legend>Dietary Filters</legend>
-          <input
-            type="checkbox"
-            class="dietary-filters__checkbox"
-            id="vegetarian"
-            value="vegetarian"
-          />
-          <label for="vegetarian">Vegetarian</label>
-          <input
-            type="checkbox"
-            class="dietary-filters__checkbox"
-            id="protein"
-            value="protein"
-          />
-          <label for="protein">Protein</label>
-          <input
-            type="checkbox"
-            class="dietary-filters__checkbox"
-            id="dinner"
-            value="dinner"
-          />
-          <label for="dinner">Dinner</label>
-        </fieldset>
-      </form>
-      <section class="menu-section">
-        <div class="menu-section__card-item">
-          <img class="menu-section__image" src="" alt="" />
-          <h2 class="menu-section__title">Avocado sandwich with boiled egg</h2>
-          <div class="menu-section__time-group">
-            <!-- time icon -->
-            <p class="menu-section__time">under 1 hour</p>
+        <!-- filter dropdown list -->
+        <!-- <div class="absolute top-12 z-10 bg-white p-4 flex flex-col border">
+          <div class="flex gap-3">
+            <input
+              type="checkbox"
+              class=""
+              id="vegetarian"
+              value="vegetarian"
+            />
+            <label for="vegetarian">Vegetarian</label>
           </div>
-          <!-- bookmark icon -->
-        </div>
-        <div class="menu-section__card-item">
-          <img class="menu-section__image" src="" alt="" />
-          <h2 class="menu-section__title">Fresh Avocado salad with broccoli</h2>
-          <div class="menu-section__time-group">
-            <!-- time icon -->
-            <p class="menu-section__time">under 1 hour</p>
+          <div class="flex gap-3">
+            <input type="checkbox" class="" id="protein" value="protein" />
+            <label for="protein">Protein</label>
           </div>
-          <!-- bookmark icon -->
-        </div>
-        <div class="menu-section__card-item">
-          <img class="menu-section__image" src="" alt="" />
-          <h2 class="menu-section__title">
-            Avocado and spinach pesto spaghetti
-          </h2>
-          <div class="menu-section__time-group">
-            <!-- time icon -->
-            <p class="menu-section__time">under 1 hour</p>
+          <div class="flex gap-3">
+            <input type="checkbox" class="" id="dinner" value="dinner" />
+            <label for="dinner">Dinner</label>
           </div>
-          <!-- bookmark icon -->
+        </div> -->
+        <!-- menu result cards-->
+        <div class="grid grid-cols-2">
+          <div class="">
+            <img class="" src="" alt="" />
+            <h2 class="">Avocado sandwich with boiled egg</h2>
+            <div class="">
+              <!-- time icon -->
+              <p class="">under 1 hour</p>
+            </div>
+            <!-- bookmark icon -->
+          </div>
+          <div class="">
+            <img class="" src="" alt="" />
+            <h2 class="">Fresh Avocado salad with broccoli</h2>
+            <div class="">
+              <!-- time icon -->
+              <p class="">under 1 hour</p>
+            </div>
+            <!-- bookmark icon -->
+          </div>
+          <div class="">
+            <img class="" src="" alt="" />
+            <h2 class="">Avocado and spinach pesto spaghetti</h2>
+            <div class="">
+              <!-- time icon -->
+              <p class="">under 1 hour</p>
+            </div>
+            <!-- bookmark icon -->
+          </div>
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
