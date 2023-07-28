@@ -13,12 +13,16 @@
   </head>
   <body class="min-h-screen flex justify-center items-center">
     <main class="max-w-5xl w-full rounded-md shadow-lg p-16">
-      <header class="w-full flex justify-between mb-4">
-        <hgroup>
+      <header
+        class="w-full flex flex-col sm:flex-row gap-4 sm:gap-0 sm:justify-between mb-4"
+      >
+        <hgroup class="flex flex-col justify-center items-center sm:block">
           <h1 class="font-bold text-2xl">Results for "Avocado"</h1>
           <p class="text-sm text-gray-500">3 results found</p>
         </hgroup>
-        <div class="flex space-x-4 items-center justify-center">
+        <div
+          class="flex gap-2 sm:gap-0 flex-col sm:flex-row space-x-4 items-center justify-center"
+        >
           <p class="text-xs">Choose display</p>
           <div class="flex justify-center">
             <button
@@ -34,8 +38,10 @@
       </header>
       <section class="relative">
         <!-- filter btn + filter badges-->
-        <div class="w-full flex space-x-2 mb-10">
-          <button class="border bg-white px-2 py-2 flex items-center space-x-2">
+        <div class="w-full flex flex-col sm:flex-row space-x-2 mb-10">
+          <button
+            class="border bg-white px-2 py-2 flex items-center space-x-2 justify-between"
+          >
             <span class="material-symbols-outlined">filter_list</span>
             <span class="text-sm">Filters</span>
             <span class="px-2 py-1 text-white bg-blue-500 rounded-full text-xs"
@@ -43,7 +49,7 @@
             >
           </button>
           <button
-            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2"
+            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2 justify-between"
           >
             <span class="text-sm text-white">Vegetarian</span>
             <span
@@ -53,7 +59,7 @@
             >
           </button>
           <button
-            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2"
+            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2 justify-between"
           >
             <span class="text-sm text-white">Protein</span>
             <span
@@ -63,7 +69,7 @@
             >
           </button>
           <button
-            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2"
+            class="border bg-blue-500 px-2 py-2 flex items-center space-x-2 justify-between"
           >
             <span class="text-sm text-white">Dinner</span>
             <span
@@ -94,14 +100,16 @@
           </div>
         </div> -->
         <!-- menu result cards-->
-        <div class="grid grid-cols-2 gap-2">
-          <div class="border-gray-200 border-2 p-5 flex gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <div
+            class="border-gray-200 border-2 p-5 flex flex-col sm:flex-row gap-6"
+          >
             <img
               class=""
               src="https://source.unsplash.com/MhpxHv0FKtE/150x150"
               alt=""
             />
-            <hgroup class="space-y-4">
+            <hgroup class="space-y-4 flex-1">
               <h2 class="font-extrabold text-md">
                 Avocado sandwich with boiled egg
               </h2>
@@ -113,15 +121,19 @@
             </hgroup>
 
             <!-- bookmark icon -->
-            <span class="material-symbols-outlined"> bookmark </span>
+            <span class="material-symbols-outlined self-end sm:self-auto">
+              bookmark
+            </span>
           </div>
-          <div class="border-gray-200 border-2 p-5 flex gap-6">
+          <div
+            class="border-gray-200 border-2 p-5 flex flex-col sm:flex-row gap-6"
+          >
             <img
               class=""
               src="https://source.unsplash.com/pCxJvSeSB5A/150x150"
               alt=""
             />
-            <hgroup class="space-y-4">
+            <hgroup class="space-y-4 flex-1">
               <h2 class="font-extrabold text-md">
                 Fresh Avocado salad with broccoli
               </h2>
@@ -133,15 +145,19 @@
             </hgroup>
 
             <!-- bookmark icon -->
-            <span class="material-symbols-outlined"> bookmark </span>
+            <span class="material-symbols-outlined self-end sm:self-auto">
+              bookmark
+            </span>
           </div>
-          <div class="border-gray-200 border-2 p-5 flex gap-6">
+          <div
+            class="border-gray-200 border-2 p-5 flex flex-col sm:flex-row gap-6"
+          >
             <img
               class=""
               src="https://source.unsplash.com/Fkn8D7DwwEQ/150x150"
               alt=""
             />
-            <hgroup class="space-y-4">
+            <hgroup class="space-y-4 flex-1">
               <h2 class="font-extrabold text-md">
                 Avocado and spinach pesto spaghetti
               </h2>
@@ -153,7 +169,9 @@
             </hgroup>
 
             <!-- bookmark icon -->
-            <span class="material-symbols-outlined"> bookmark </span>
+            <span class="material-symbols-outlined self-end sm:self-auto">
+              bookmark
+            </span>
           </div>
         </div>
       </section>
